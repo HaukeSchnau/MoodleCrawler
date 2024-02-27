@@ -6,8 +6,8 @@ import (
 )
 
 func matchFolder(name string) (folder string, ok bool) {
-	lectureRegex := regexp.MustCompile(`(?i)Vorlesung|Folien|Kapitel|Aufzeichnung|LE[0-9]{1,2}|Woche [0-9]{1,2}`)
-	exerciseRegex := regexp.MustCompile(`(?i)Übung|Aufgabe|Blatt`)
+	lectureRegex := regexp.MustCompile(`(?i)Vorlesung|Folien|Kapitel|Aufzeichnung|LE[0-9]{1,2}|Woche [0-9]{1,2}|Slides`)
+	exerciseRegex := regexp.MustCompile(`(?i)Übung|Aufgabe|Blatt|Exercise`)
 	solutionRegex := regexp.MustCompile(`(?i)Lösung`)
 
 	if lectureRegex.MatchString(name) {
