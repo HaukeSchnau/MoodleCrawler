@@ -13,6 +13,7 @@ func downloadFile(client *http.Client, url string, outputPath string) {
 
 	contentTypeExtMap := map[string]string{
 		"application/pdf": ".pdf",
+		"application/vnd.openxmlformats-officedocument.wordprocessingml.document": ".docx",
 	}
 
 	parentPath := outputPath[:len(outputPath)-len(outputPath[strings.LastIndex(outputPath, "/"):])]

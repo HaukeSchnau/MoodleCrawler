@@ -50,7 +50,7 @@ func main() {
 				getAufgabe(&c, resource.Url, outPath)
 			case "Verzeichnis":
 				getVerzeichnis(&c, resource.Url, outPath)
-			case "Forum", "Freie Gruppeneinteilung", "Moodleoverflow", "Feedback", "Text- und Medienfeld", "Abstimmung", "Planer":
+			case "Forum", "Freie Gruppeneinteilung", "Moodleoverflow", "Feedback", "Text- und Medienfeld", "Abstimmung", "Planer", "Kollaboratives Dokument", "Anwesenheit", "Link/URL", "Test":
 				// Do nothing for now. Maybe add support for these later.
 			default:
 				log.Fatalf("Unknown resource type %s: %s", resource.ModName, resource.Name)
