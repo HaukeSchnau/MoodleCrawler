@@ -52,8 +52,6 @@ func getTextPage(client *http.Client, pageUrl string, outPath string) {
 		}
 	})
 
-	return // Disable videos for now
-
 	iframes := doc.Find("iframe")
 	if iframes.Length() == 0 {
 		log.Printf("No iframes found on text page %s", pageUrl)
