@@ -24,7 +24,7 @@ func main() {
 	}
 
 	cookieJar, _ := cookiejar.New(nil)
-	c := http.Client{Timeout: time.Duration(10) * time.Second, Jar: cookieJar}
+	c := http.Client{Timeout: time.Duration(30) * time.Second, Jar: cookieJar}
 
 	sessionKey := login(&c, *moodleUsername, *moodlePassword)
 

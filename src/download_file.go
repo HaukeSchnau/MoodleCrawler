@@ -9,7 +9,7 @@ import (
 )
 
 func downloadFile(client *http.Client, url string, outputPath string) {
-	log.Printf("Downloading %s", outputPath)
+	log.Printf("Downloading %s from %s", outputPath, url)
 
 	contentTypeExtMap := map[string]string{
 		"application/pdf": ".pdf",
